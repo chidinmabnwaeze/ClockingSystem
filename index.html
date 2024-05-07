@@ -1,115 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="icon" href="/Logo/ipi Solutions New 1.png">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="script" href="javascript/script.js">
+
     <title>IPI attendance </title>
 </head>
+
 <body>
     <header class="attendance">
         <div class="header-text">
-        <h5>ATTENDANCE CLOCKING SYSTEM</h5>
-    </div>
+            <h5>ATTENDANCE CLOCKING SYSTEM</h5>
+        </div>
     </header>
 
-    
+
 
     <nav class="sidebar">
-    <div class="logo">
-        <img src="Logo/ipi Solutions New 1.png" alt="">
-    </div>
+        <div class="logo">
+            <img src="Logo/ipi Solutions New 1.png" alt="">
+        </div>
 
-    <button id="clock" class="clock">Clock in</button>
+        <button id="clock" class="clock">Clock in</button>
 
-    <div class="menu">
-        <ul class="menu-items">
+        <div class="menu">
+            <ul class="menu-items">
 
-<li class="menu-list">
-    <a id="menu-icon" class="menu-list" href="#">
-        <img class="menu-icon" src="icons/dashboard-square-02.svg" alt=""><p>Dashboard</p></a>
-    </li>
+                <li class="menu-list">
+                    
+                    <a id="menu-icon" class="menu-list" href="#">
+                        <div class="stroke"> </div>
+                        <img class="menu-icon" src="icons/dashboard-square-02.svg" alt="">
+                        <p>Dashboard</p>
+                    </a>
+                </li>
 
-    <li class="menu-list">
-        <a id="menu-icon" class="menu-list" href="#">
-            <img class="menu-icon" src="icons/vuesax/linear/calendar.svg" alt="">
-            <p>Timesheet</p></a>
-        </li>
+                <li class="menu-list">
+                    <a id="menu-icon" class="menu-list" href="#">
+                        <img class="menu-icon" src="icons/vuesax/linear/calendar.svg" alt="">
+                        <p>Timesheet</p>
+                    </a>
+                </li>
 
-        <li class="menu-list">
-            <a id="menu-icon" class="menu-list" href="#">
-                <img class="menu-icon" src="icons/task-daily-02.svg" alt="">
-                <p>Tasks</p></a>
-            </li>
+                <li class="menu-list">
+                    <a id="menu-icon" class="menu-list" href="#">
+                        <img class="menu-icon" src="icons/task-daily-02.svg" alt="">
+                        <p>Tasks</p>
+                    </a>
+                </li>
 
-            
-        <li class="menu-list">
-            <a id="menu-icon" class="menu-list" href="#">
-                <img class="menu-icon" src="icons/invoice-03.svg" alt="">
-                <p>Payroll</p></a>
-            </li>
 
-            
-        <li class="menu-list">
-            <a id="menu-icon" class="menu-list" href="#">
-                <img class="menu-icon" src="icons/waterfall-up-01.svg" alt="">
-                <p>Reports</p></a>
-            </li>
-        </ul>
-    </div>
+                <li class="menu-list">
+                    <a id="menu-icon" class="menu-list" href="#">
+                        <img class="menu-icon" src="icons/invoice-03.svg" alt="">
+                        <p>Payroll</p>
+                    </a>
+                </li>
+
+
+                <li class="menu-list">
+                    <a id="menu-icon" class="menu-list" href="#">
+                        <img class="menu-icon" src="icons/waterfall-up-01.svg" alt="">
+                        <p>Reports</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
 
     </nav>
 
     <main>
         <section class="section1">
-        <div class="welcometext">
+            <div class="welcometext">
 
-           <div class="welcome"><h2>Welcome User,</h2></div> 
-           <div class="welcome"><h4>IPI Solutions Limited Attendance</h4></div> 
-           <div class="welcome"> <p>Clock in</p></div> 
-            
-        </div>
+                <div class="welcome">
+                    <h2>Welcome User,</h2>
+                </div>
+                <div class="welcome">
+                    <h4>IPI Solutions Limited Attendance</h4>
+                </div>
+                <div class="welcome">
+                    <p>Clock in</p>
+                </div>
 
-<section class="right-section">
-    <div class="clock-img">
-        <img src="images/Chronometer.png" alt=""></div>
+            </div>
 
-        <div class="timebuttons">
-            <button class="time">
-                <h4>08 :</h4>
-                <p>Hours</p>
-            </button>
-            <button class="time">
-                <h4>08 :</h4>
-                <p>Hours</p>
-            </button>
-            <button class="time">
-                <h4>08 :</h4>
-                <p>Hours</p>
-            </button>
-            <button class="time">
-                <h4>AM</h4>
-                
-            </button>
-        </div>
-    </section>
-    </section>
+            <section class="right-section">
+                <div class="clock-img">
+                    <img src="images/Chronometer.png" alt="">
+                </div>
 
-    <section class="section2">
-<div class="illustration">
-    <img src="images/confirmed-attendance/rafiki.png" alt="">
-</div>
-<div class="scanner">
-    <div class="inner">
-    <img src="/images/card scanner img.png" alt="">
-</div>
-</div>
-    </section>
+                <div class="timebuttons">
+                    <button class="time">
+                        <h4 id="hrs">08 :</h4>
+                        <p>Hours</p>
+                    </button>
+                    <button class="time">
+                        <h4 id="mins">08 :</h4>
+                        <p>Minutes</p>
+                    </button>
+                    <button class="time">
+                        <h4 id="secs">08 :</h4>
+                        <p>Seconds</p>
+                    </button>
+                    <button class="time">
+                        <h4>AM</h4>
+
+                    </button>
+                </div>
+            </section>
+        </section>
+
+        <section class="section2">
+            <div class="illustration">
+                <img src="images/confirmed-attendance/rafiki.png" alt="">
+            </div>
+            <div class="scanner">
+                <div class="inner">
+                    <img src="/images/card scanner img.png" alt="">
+                </div>
+            </div>
+        </section>
     </main>
+
+    <!-- my javascript -->
+    <script src="javascript/script.js"></script>
 </body>
+
 </html>

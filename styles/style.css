@@ -53,6 +53,7 @@ margin-left: 20px;
 .menu li{
     list-style: none;
     padding: 10px;
+    position: relative;
     
 }
 .menu a{
@@ -62,8 +63,31 @@ margin-left: 20px;
    display: flex;
    
 }
+.menu ul :hover{
+    background-color: #ebebeb;
+    color: #004e98;
+}
+.menu-icon img :hover{
+    background-color: #ebebeb;
+    color: #004e98;
+}
+
 .menu-list p{
     margin-left: 10px;
+}
+
+.stroke{
+    width: 2.5px;
+    height: 29px;
+    border-radius: 5px;
+    background-color: #004e98;
+    float: left;
+    position: absolute;
+    left: 0;
+    display: ;
+}
+.stroke:hover {
+    display: block;
 }
 
 .clock{
