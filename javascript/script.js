@@ -26,13 +26,15 @@ setInterval(() => {
       ? `0${currentTime.getSeconds()}`
       : currentTime.getSeconds();
 
+      pm.innerHTML = currentTime.toLocaleTimeString("en-NG", {
+        hour12 : true
+    }).split(" ")[1].toUpperCase()
+
   // hrs.innerHTML= currentTime.getHours()<10 ? "0": "" + currentTime.getHours();
   // mins.innerHTML = currentTime.getMinutes()<10?"0": "" +  currentTime.getMinutes();
   // secs.innerHTML = currentTime.getSeconds()<10?"0": "" +  currentTime.getSeconds();
 
-  pmgit.innerHTML = currentTime.toLocaleTimeString("en-NG", {
-    hour12 : true
-}).split(" ")[3]
+  
 
 }, 1000);
 
